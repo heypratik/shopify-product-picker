@@ -1,0 +1,226 @@
+.overlay {
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(0,0,0,0.2);
+    z-index: 100;
+    animation-name: fadeIn;
+    animation-duration: 0.2s
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: white;
+    border-radius: 4px;
+    width: 663px;
+    height: 612px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    animation-name: fadeIn;
+    animation-duration: 0.2s
+}
+
+.modal_cut {
+    cursor: pointer;
+}
+
+.modal_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.modal_header > p {
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer {
+    padding: 20px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    background: white;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.lines {
+    color: rgba(0,0,0,0.1);
+}
+
+.modal_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.m_search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 5px 0px;
+    display: flex;
+}
+
+.search > input {
+    width: 550px;
+    height: 32px;
+    border: none;
+    padding-left: 20px;
+}
+
+.searchInput:focus, input:focus {
+    border: none;
+    outline: none;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.m_data > img {
+    margin: 0px 20px;
+}
+
+.modal-data > input[type="checkbox"] {
+    background-color: #007f60;
+}
+
+.m_data {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 10px 0px 10px 15px;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+.m_data_child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 60px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.m_data_child_one > img {
+    margin: 0px 10px;
+}
+
+.m_data_child_one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+}
+
+.child_modal_data {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.add-product_modal {
+    align-self: flex-end;
+    cursor: pointer;
+    width: 72px;
+    height: 32px;
+    border: 2px solid #008060;
+    border-radius: 4px;
+    color: white;
+    background-color: #007f60;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.add-product_modal:disabled {
+    align-self: flex-end;
+    cursor: not-allowed;
+    align-self: flex-end;
+    width: 72px;
+    height: 32px;
+    border: 2px solid #008060;
+    border-radius: 4px;
+    color: white;
+    background-color: #007f60;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.cancel_modal {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 104px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.infinite-scroll-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.loader {
+    align-self: center;
+
+}
+
+input[type="checkbox"] {
+    accent-color: #007f60;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.checkbox-label {
+    cursor: pointer;
+
+}
+
+label:hover{
+    background: #f7f7f7;
+}
